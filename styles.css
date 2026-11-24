@@ -85,7 +85,7 @@ button,input,textarea,select{font:inherit;color:inherit}
 .card3d .play{position:absolute;right:8px;top:8px;width:28px;height:28px;border-radius:50%;background:var(--lime);color:var(--lime-ink);display:grid;place-items:center;font-size:11px}
 .card3d.ghost{background:rgba(10,30,20,.55);border:1px dashed rgba(166,243,196,.55);box-shadow:none;cursor:default}
 .card3d.ghost .ph{background:transparent;color:var(--phos)}
-.card3d.ghost .ph b{color:var(--phos);text-shadow:0 0 8px rgba(120,255,170,.5);font-size:15px;font-family:var(--f-mono);letter-spacing:.08em;font-weight:500;text-transform:uppercase;text-align:center}
+.card3d.ghost .ph b{color:var(--phos);text-shadow:0 0 8px rgba(120,255,170,.5);font-size:15px;font-family:var(--f-mono);letter-spacing:.08em;font-weight:500;text-transform:uppercase;text-align:center;white-space:pre-line;line-height:1.5;padding:0 10px}
 .arc-nav{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:8px;font-size:13px;color:rgba(255,255,255,.92)}
 .arc-nav{color:var(--phos)}
 .arc-nav button{width:36px;height:36px;border-radius:50%;border:1px solid rgba(166,243,196,.45);background:rgba(166,243,196,.08);color:var(--phos);cursor:pointer}
