@@ -71,7 +71,19 @@ function steps(text){
 const lines = v => Array.isArray(v) ? v.map(str).join("\n") : str(v);
 function fmtDate(d){ if(!d) return ""; const x=new Date(d+"T12:00:00"); return isNaN(x)?str(d):x.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"}); }
 const sorted = () => [...S.exps].sort((a,b)=>(Number(a.num)||999)-(Number(b.num)||999));
-const ready = d => !!(str(d.title).trim() && !/^Experiment \d+$/i.test(str(d.title).trim()));
+const ready = d => !!d._ready;
+// A lab can list one "video" and/or several "videos" (clips). It counts as ready once it has
+// a title, a video or a report; untitled labs show as "Experiment N".
+function normalize(d){
+  d = Object.assign({}, d);
+  const vids = [d.video, ...(Array.isArray(d.videos)?d.videos:[])].filter(v=>videoInfo(v));
+  const realTitle = str(d.title).trim();
+  d._vids = vids;
+  d._ready = !!(realTitle || vids.length || cleanUrl(d.report));
+  d.video = vids[0] || "";
+  if (!realTitle) d.title = "Experiment "+(str(d.num)||"");
+  return d;
+}
 const total = () => Number(S.info.totalLabs) || Math.max(8, S.exps.length);
 const members = () => (Array.isArray(S.info.members)?S.info.members:str(S.info.members).split(/[,\n]/)).map(s=>str(s).trim()).filter(Boolean);
 const idOf = d => "lab-"+pad(str(d.num)||"0");
@@ -192,7 +204,7 @@ function about(){
 }
 function bento(){
   const i=S.info, list=S.exps.filter(ready);
-  const vids = list.filter(d=>videoInfo(d.video)).length;
+  const vids = list.reduce((s,d)=>s+d._vids.length,0);
   const photos = list.reduce((s,d)=>s+photosOf(d).length,0);
   const topics = new Set(list.map(d=>d.group||"other")).size;
   const cover = imgUrl(i.groupPhoto), mem = members();
@@ -247,12 +259,29 @@ function detail(d){
         str(d.equation).trim()?h("div",{class:"eq"},formula(d.equation)):null)));
 
   const main=h("div",{style:"min-width:0"}), media=h("div",{class:"media"});
-  const v=videoInfo(d.video);
-  if (v && v.kind==="embed") media.append(h("div",{class:"vid"},h("iframe",{src:v.src,title:"Video: "+str(d.title),allow:"autoplay; encrypted-media; picture-in-picture",allowfullscreen:true,loading:"lazy"})));
-  if (v && v.kind==="file") media.append(h("div",{class:"vid"},h("video",{controls:true,preload:"metadata",playsinline:true,src:v.src})));
-  if (v){ const p=h("span",{class:"p"}); p.append(svg('<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>'));
-    media.append(h("a",{class:"vlink",href:v.open,target:"_blank",rel:"noopener"},p,h("span",{},h("b",{},v.kind==="link"?"Watch the experiment video":"Open the video in a new tab"),h("br"),h("small",{class:"muted"},v.open)))); }
-  if (!v) media.append(h("div",{class:"box"},h("p",{class:"muted",style:"margin:0"},"No video added for this experiment yet.")));
+  const clips=d._vids.map(videoInfo).filter(Boolean);
+  const stageBox=h("div",{class:"vid"}), openLink=h("a",{class:"vlink",target:"_blank",rel:"noopener"});
+  const label=h("b",{}), url=h("small",{class:"muted"});
+  const p=h("span",{class:"p"}); p.append(svg('<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>'));
+  openLink.append(p,h("span",{},label,h("br"),url));
+  const tabs=h("div",{class:"clips",role:"tablist","aria-label":"Video clips"});
+  function show(ix){
+    const v=clips[ix]; stageBox.textContent="";
+    if (v.kind==="embed") stageBox.append(h("iframe",{src:v.src,title:"Video clip "+(ix+1)+": "+str(d.title),allow:"autoplay; encrypted-media; picture-in-picture",allowfullscreen:true}));
+    if (v.kind==="file") stageBox.append(h("video",{controls:true,preload:"metadata",playsinline:true,src:v.src}));
+    stageBox.hidden = v.kind==="link";
+    openLink.href=v.open; label.textContent=(clips.length>1?"Clip "+(ix+1)+" of "+clips.length+" · ":"")+(v.kind==="link"?"Watch the experiment video":"Open the video in a new tab"); url.textContent=v.open;
+    [...tabs.children].forEach((b,k)=>{ b.setAttribute("aria-selected",String(k===ix)); });
+  }
+  if (clips.length){
+    if (clips.length>1) clips.forEach((v,k)=>{
+      const b=h("button",{type:"button",role:"tab",class:"clip",onclick:()=>show(k)});
+      if (v.thumb) b.append(h("img",{src:v.thumb,alt:"",loading:"lazy",referrerpolicy:"no-referrer"}));
+      b.append(h("span",{},"Clip "+(k+1)));
+      tabs.append(b);
+    });
+    media.append(stageBox, clips.length>1?tabs:null, openLink); show(0);
+  } else media.append(h("div",{class:"box"},h("p",{class:"muted",style:"margin:0"},"No video added for this experiment yet.")));
   main.append(media);
   const rep=h("div",{class:"rep"});
   const sec=(k,t,b)=>rep.append(h("h2",{},h("span",{class:"k"},k),t),b);
@@ -320,7 +349,7 @@ function hideLoader(){
   setTimeout(()=>{ loader.classList.add("done"); setTimeout(()=>loader.remove(), 600); }, Math.max(0, 1400-(Date.now()-started)));
 }
 render(); restartTimer();
-Promise.all([fetch("data/site.json").then(r=>r.json()), fetch("data/experiments.json").then(r=>r.json())])
-  .then(([info, exps])=>{ S.info=info||{}; S.exps=Array.isArray(exps)?exps:[]; S.loaded=true; render(); hideLoader(); if(location.hash.length>1 && !location.hash.startsWith("#lab-")){ const el=document.getElementById(location.hash.slice(1)); if(el) el.scrollIntoView(); } })
+Promise.all([fetch("data/site.json",{cache:"no-cache"}).then(r=>r.json()), fetch("data/experiments.json",{cache:"no-cache"}).then(r=>r.json())])
+  .then(([info, exps])=>{ S.info=info||{}; S.exps=(Array.isArray(exps)?exps:[]).map(normalize); S.loaded=true; render(); hideLoader(); if(location.hash.length>1 && !location.hash.startsWith("#lab-")){ const el=document.getElementById(location.hash.slice(1)); if(el) el.scrollIntoView(); } })
   .catch(err=>{ S.loaded=true; S.err="Couldn't load the content files ("+err.message+"). If you opened index.html directly, run a local server instead (see README)."; render(); hideLoader(); });
 })();

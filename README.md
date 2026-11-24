@@ -28,7 +28,10 @@ Each block in `data/experiments.json` looks like this:
   "group": "acid",
   "authors": "Names of who performed it",
   "equation": "CH3COOH + NaOH -> CH3COONa + H2O",
-  "video": "https://drive.google.com/file/d/FILE_ID/view",
+  "videos": [
+    "https://drive.google.com/file/d/CLIP_1_ID/view",
+    "https://drive.google.com/file/d/CLIP_2_ID/view"
+  ],
   "report": "https://drive.google.com/file/d/FILE_ID/view",
   "reportName": "EXP-1 Lab Report",
   "photos": ["images/exp1-setup.jpg", "https://drive.google.com/file/d/FILE_ID/view"],
@@ -42,7 +45,8 @@ Each block in `data/experiments.json` looks like this:
 }
 ```
 
-- An experiment shows as **"coming soon"** until it has a `title`.
+- `videos` is a list of clips in the order they should play. One clip is fine, and the first clip's thumbnail becomes the floating card.
+- An experiment shows as **"coming soon"** until it has a title, a video or a report. Without a title it shows as "Experiment N".
 - `group` sets the colour and must be one of: `acid`, `redox`, `organic`, `stoich`, `thermo`, `other`.
 - `symbol` is the 1–3 letter "element" on its card. Leave it empty and one is made from the title.
 - In `equation`, numbers after letters become subscripts and `->` becomes an arrow.
