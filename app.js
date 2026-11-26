@@ -225,6 +225,7 @@ function xcard(d){
     h("div",{class:"body"},
       h("div",{class:"meta"},h("span",{},"Lab "+pad(str(d.num)||"0")),h("span",{},fmtDate(d.date))),
       h("h3",{},done?str(d.title):"Coming soon"),
+      done && str(d.description).trim() ? h("p",{class:"xdesc"},d.description) : null,
       h("div",{class:"muted",style:"font-size:13px"},h("span",{class:"dot"}),(GROUPS[d.group]||GROUPS.other).name),
       h("div",{class:"badges"},v?h("span",{class:"badge"},"▶ Video"):null,cleanUrl(d.report)?h("span",{class:"badge"},"Report"):null))];
   return done ? h("a",{class:"xcard",href:"#"+idOf(d),style:"--c:"+gvar(d.group)},inner)
@@ -256,6 +257,7 @@ function detail(d){
       h("div",{style:"min-width:0"},
         h("h1",{},str(d.title)),
         h("div",{class:"sub"},h("span",{},"Lab "+pad(str(d.num)||"0")),h("span",{},(GROUPS[d.group]||GROUPS.other).name),d.date?h("span",{},fmtDate(d.date)):null,str(d.authors).trim()?h("span",{},"By "+d.authors):null),
+        str(d.description).trim()?h("p",{class:"desc"},d.description):null,
         str(d.equation).trim()?h("div",{class:"eq"},formula(d.equation)):null)));
 
   const main=h("div",{style:"min-width:0"}), media=h("div",{class:"media"});

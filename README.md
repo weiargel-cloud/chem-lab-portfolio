@@ -45,6 +45,7 @@ Each block in `data/experiments.json` looks like this:
 }
 ```
 
+- `description` is a short summary (2–3 sentences) shown on the experiment's card and under its title.
 - `videos` is a list of clips in the order they should play. One clip is fine, and the first clip's thumbnail becomes the floating card.
 - An experiment shows as **"coming soon"** until it has a title, a video or a report. Without a title it shows as "Experiment N".
 - `group` sets the colour and must be one of: `acid`, `redox`, `organic`, `stoich`, `thermo`, `other`.

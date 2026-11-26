@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -8,9 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 <style>
   .vid iframe{width:100%;aspect-ratio:16/9;border:0;display:block;background:#000}
+  .dhead .desc{position:relative;z-index:2;margin:14px 0 0;max-width:68ch;font-size:16px;line-height:1.55;color:rgba(255,255,255,.86)}
+  .xcard .xdesc{margin:0;font-size:14px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   .box.lime .file{background:#FFFFFF;color:#0F1114;border-color:rgba(15,17,20,.12)}
   .box.lime .file:hover{border-color:#0F1114}
   .clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
@@ -54,10 +56,10 @@
       <g transform="rotate(-60)"><circle r="7"><animateMotion dur="1.7s" begin="-1.13s" repeatCount="indefinite"><mpath href="#orbit"/></animateMotion></circle></g>
     </g>
   </svg>
-  <p>Loading lab data…</p>
+  <p>Loading lab dataâ€¦</p>
 </div>
 <div id="root"></div>
 <noscript>This site needs JavaScript to show the experiments.</noscript>
-<script src="app.js?v=3"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

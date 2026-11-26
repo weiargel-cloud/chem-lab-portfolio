@@ -1,158 +1,243 @@
 [
-  {
-    "num": 1,
-    "title": "Laboratory and Safety Procedures",
-    "symbol": "Sf",
-    "date": "2026-08-04",
-    "group": "other",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1rR0sNkeR4W21dKMaBzynbKIKvSr1d8BV/view",
-      "https://drive.google.com/file/d/1_9XGm1Gti9wEa020QgihZ_BFW7JOc5Ij/view"
-    ],
-    "report": "https://drive.google.com/file/d/1jloKIYnNNBu58WA63Rc6yGEvOD4w-fA_/view",
-    "reportName": "CHEM101 Dry Lab 1 report",
-    "photos": [
-      "https://drive.google.com/file/d/15o88U3EYSm1xauraQGxGx1NC0WknGk-2/view",
-      "https://drive.google.com/file/d/1ugolVOvmCK-E7DudY1Snwuh3v8MLiqXe/view",
-      "https://drive.google.com/file/d/1Joi5d19S4OMLlHQ8awYo6f0IOaz8Bqnk/view",
-      "https://drive.google.com/file/d/10OvZx-ypmzfKdTglLzpyfxEw8u55AmZh/view"
-    ],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  },
-  {
-    "num": 2,
-    "title": "Calorimetry",
-    "symbol": "Ca",
-    "date": "2026-08-05",
-    "group": "thermo",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1Ym8q9hdQ_qojoSajB5xWsLBgQ2ONi1be/view",
-      "https://drive.google.com/file/d/1NDJ__cGG0V4p1YQS0oaWpd_RMb8aVHu-/view",
-      "https://drive.google.com/file/d/1GGdDu9w-JBBQ45ueQRxqvmUgM8Rsh9om/view",
-      "https://drive.google.com/file/d/1tzsStSHCeS9U9QlcfNTaETtAJQPJ66yP/view",
-      "https://drive.google.com/file/d/1FNJs-EjezxvkqYEkc8cd716oBt6VzyvU/view",
-      "https://drive.google.com/file/d/14uf9K-9J7qW8hIbojADhrtmKeJTGzyza/view",
-      "https://drive.google.com/file/d/1YHM9LW_GJ0L5BdAK8auGEpXmlmscK6Nc/view",
-      "https://drive.google.com/file/d/12BAgZEqFzBiYvPVhmcUeP7nXxJ6Roy0r/view",
-      "https://drive.google.com/file/d/1VXFW7R7-s-W4llg42b_-ZyhOXKyytRm9/view",
-      "https://drive.google.com/file/d/1K7Btr39bi35PmHKVYEJzWUAUc1FHCdpK/view",
-      "https://drive.google.com/file/d/105UpxUwxMvUa2GFKzYN8P7DClj8lCj2g/view",
-      "https://drive.google.com/file/d/1K90gMepKqLYZsPJvuoMgRu_VIYa7oc2X/view",
-      "https://drive.google.com/file/d/11-EY6iV9NibpHIJufAAbx_laK7DxgshD/view"
-    ],
-    "report": "https://drive.google.com/file/d/1-v7GAxTZN9YcVz6QlyKRqbyXDgypiYBw/view",
-    "reportName": "Calorimetry lab report",
-    "photos": [],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  },
-  {
-    "num": 3,
-    "title": "Activity Series of Metals",
-    "symbol": "Ac",
-    "date": "2026-08-12",
-    "group": "redox",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1yZUR8FgGe8ojiJmXd3793vsx_UFa5z_z/view",
-      "https://drive.google.com/file/d/14NQxcti5lsb92A_azV7NDy4E1Wbj2vbY/view",
-      "https://drive.google.com/file/d/15f5hh8mkBPdSN2ppj867MPm1-TNdngqa/view",
-      "https://drive.google.com/file/d/1zLMcTS3fV1AxTU3THtcN_bXPKHQawQe8/view",
-      "https://drive.google.com/file/d/1143PmaD8tQeNxcDNq75yXEieV_c-MisK/view",
-      "https://drive.google.com/file/d/1i1zvJKHBTCq_iTKkQ45J8fsMUMJJHQof/view"
-    ],
-    "report": "https://drive.google.com/file/d/17RcjVemCTr9W_WQrvNy3M1ZJgGIliR8D/view",
-    "reportName": "Activity Series of Metals report (Experiments 3 and 4)",
-    "photos": [],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  },
-  {
-    "num": 4,
-    "title": "Activity Series of Metals, Part 2",
-    "symbol": "Mt",
-    "date": "2026-08-12",
-    "group": "redox",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1SDYys35b-pXUV7V6wdBucBBFxa-fzGAb/view",
-      "https://drive.google.com/file/d/17jA40DWdorzMzpskclbPq0eGrWxtey1B/view",
-      "https://drive.google.com/file/d/1H9tU8d7Y9HW80c3qfnfM-wEpf2UdM9Mw/view",
-      "https://drive.google.com/file/d/1tpSLoAr72rGWebzUksmSx4WZ52MCUgHl/view",
-      "https://drive.google.com/file/d/1XkHkKMaYjsDpTuKIcEeObCltDfKkwdsm/view",
-      "https://drive.google.com/file/d/1LuHqs2VTl19ubSdGT2qHj8CR33El3B2c/view"
-    ],
-    "report": "https://drive.google.com/file/d/17RcjVemCTr9W_WQrvNy3M1ZJgGIliR8D/view",
-    "reportName": "Activity Series of Metals report (Experiments 3 and 4)",
-    "photos": [],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  },
-  { "num": 5, "title": "", "symbol": "", "date": "", "group": "other", "authors": "", "equation": "", "videos": [], "report": "", "reportName": "", "photos": [], "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": "" },
-  {
-    "num": 6,
-    "title": "Water: Its Properties and Purification",
-    "symbol": "Wa",
-    "date": "2026-09-30",
-    "group": "other",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1Vz1nzIERWtBULaI7HwRiNGcDNDmUEfJW/view",
-      "https://drive.google.com/file/d/1j5Gla62ZfjBaa_s6HzSmX-wq0AZb5Ttx/view",
-      "https://drive.google.com/file/d/1YB7jUU36DHIJ3plNoLQH9zGpoe74L7gd/view",
-      "https://drive.google.com/file/d/142phVFPqM60IBfyvoq29z3PYWJx7GiTs/view",
-      "https://drive.google.com/file/d/1BZg1aNghDjGq3AryTYQzjPIvOthHuv_A/view",
-      "https://drive.google.com/file/d/1M_ixcGRH_1wOCQfUf-C4C_AuonS6RRD6/view",
-      "https://drive.google.com/file/d/1olge8RpzLbZpchfT2urHumRaYRzv9bj2/view"
-    ],
-    "report": "https://drive.google.com/file/d/1dGdCLXvq-Z9lexd-nsKToZP9ARgg-_c3/view",
-    "reportName": "Water: Its Properties and Purification report",
-    "photos": [],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  },
-  {
-    "num": 7,
-    "title": "Determination of Dissolved Oxygen",
-    "symbol": "DO",
-    "date": "2026-10-14",
-    "group": "redox",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1B8EulWSLmKtQbqkkydiPCNg02-nn7aBU/view",
-      "https://drive.google.com/file/d/1iQOvMLwgq3U43lFGqcOKTd-86ns52Vzd/view",
-      "https://drive.google.com/file/d/1jL5EENvviLebDBt0ZTsLs2owOg0EO8iu/view",
-      "https://drive.google.com/file/d/10YuDYzGkjEUbi08VY9vmi-1wMTX47x2n/view",
-      "https://drive.google.com/file/d/1qfCP3rc9dHy2PTI0YC632ooutR5U63Wl/view",
-      "https://drive.google.com/file/d/1_2ltEeWHW4cus6pBzT4YHctUC7cqDzfW/view"
-    ],
-    "report": "",
-    "reportName": "",
-    "photos": [],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  },
-  {
-    "num": 8,
-    "title": "Determination of Hardness and Chloride in Water",
-    "symbol": "Hd",
-    "date": "2026-10-28",
-    "group": "stoich",
-    "authors": "",
-    "equation": "",
-    "videos": [
-      "https://drive.google.com/file/d/1HwCJT4IERhO-M4xhCDumDXuyFLUeWH1y/view",
-      "https://drive.google.com/file/d/1U2Cw5s0t69Mt3DJSc3cIZHMBFd1Jgxeb/view",
-      "https://drive.google.com/file/d/1U7t52qqSjNQQFYWxjb4UROEUHmrsnnRY/view",
-      "https://drive.google.com/file/d/1zjISgH57ZguDnMiALeoGBXwhLC4UyuT7/view",
-      "https://drive.google.com/file/d/1_bAAtrtvb7SmN5_GjUDx5MdupRxza8FJ/view"
-    ],
-    "report": "https://drive.google.com/file/d/16gYgz-O46-S5AgvyMZOHPJDfVbr8Ii31/view",
-    "reportName": "Hardness and Chloride in Water report",
-    "photos": [],
-    "objective": "", "materials": "", "procedure": "", "observations": "", "results": "", "conclusion": "", "safety": ""
-  }
+    {
+        "num":  1,
+        "title":  "Laboratory and Safety Procedures",
+        "description":  "A dry lab on working safely in a chemistry laboratory. We drew and explained safe practices for handling chemicals, using PPE and emergency equipment, and described how to use a triple beam balance, heat a test tube safely, avoid contaminating reagents, and read volumes in a graduated cylinder, burette and pipette.",
+        "symbol":  "Sf",
+        "date":  "2026-07-29",
+        "group":  "other",
+        "authors":  "",
+        "equation":  "",
+        "videos":  [
+                       "https://drive.google.com/file/d/1rR0sNkeR4W21dKMaBzynbKIKvSr1d8BV/view",
+                       "https://drive.google.com/file/d/1_9XGm1Gti9wEa020QgihZ_BFW7JOc5Ij/view"
+                   ],
+        "report":  "https://drive.google.com/file/d/1jloKIYnNNBu58WA63Rc6yGEvOD4w-fA_/view",
+        "reportName":  "CHEM101 Dry Lab 1 report",
+        "photos":  [
+                       "https://drive.google.com/file/d/15o88U3EYSm1xauraQGxGx1NC0WknGk-2/view",
+                       "https://drive.google.com/file/d/1ugolVOvmCK-E7DudY1Snwuh3v8MLiqXe/view",
+                       "https://drive.google.com/file/d/1Joi5d19S4OMLlHQ8awYo6f0IOaz8Bqnk/view",
+                       "https://drive.google.com/file/d/10OvZx-ypmzfKdTglLzpyfxEw8u55AmZh/view"
+                   ],
+        "objective":  "To explain the reasons for the different rules and regulations in the laboratory.",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  2,
+        "title":  "Calorimetry",
+        "description":  "We measured the heat released when hydrochloric acid neutralizes sodium hydroxide. First we found the heat capacity of the calorimeter by mixing hot and cold water in it, then used that to work out the enthalpy change of neutralization per mole of water formed.",
+        "symbol":  "Ca",
+        "date":  "2026-08-05",
+        "group":  "thermo",
+        "authors":  "",
+        "equation":  "HCl + NaOH -\u003e NaCl + H2O",
+        "videos":  [
+                       "https://drive.google.com/file/d/1Ym8q9hdQ_qojoSajB5xWsLBgQ2ONi1be/view",
+                       "https://drive.google.com/file/d/1NDJ__cGG0V4p1YQS0oaWpd_RMb8aVHu-/view",
+                       "https://drive.google.com/file/d/1GGdDu9w-JBBQ45ueQRxqvmUgM8Rsh9om/view",
+                       "https://drive.google.com/file/d/1tzsStSHCeS9U9QlcfNTaETtAJQPJ66yP/view",
+                       "https://drive.google.com/file/d/1FNJs-EjezxvkqYEkc8cd716oBt6VzyvU/view",
+                       "https://drive.google.com/file/d/14uf9K-9J7qW8hIbojADhrtmKeJTGzyza/view",
+                       "https://drive.google.com/file/d/1YHM9LW_GJ0L5BdAK8auGEpXmlmscK6Nc/view",
+                       "https://drive.google.com/file/d/12BAgZEqFzBiYvPVhmcUeP7nXxJ6Roy0r/view",
+                       "https://drive.google.com/file/d/1VXFW7R7-s-W4llg42b_-ZyhOXKyytRm9/view",
+                       "https://drive.google.com/file/d/1K7Btr39bi35PmHKVYEJzWUAUc1FHCdpK/view",
+                       "https://drive.google.com/file/d/105UpxUwxMvUa2GFKzYN8P7DClj8lCj2g/view",
+                       "https://drive.google.com/file/d/1K90gMepKqLYZsPJvuoMgRu_VIYa7oc2X/view",
+                       "https://drive.google.com/file/d/11-EY6iV9NibpHIJufAAbx_laK7DxgshD/view"
+                   ],
+        "report":  "https://drive.google.com/file/d/1-v7GAxTZN9YcVz6QlyKRqbyXDgypiYBw/view",
+        "reportName":  "Calorimetry lab report",
+        "photos":  [
+
+                   ],
+        "objective":  "To measure the energy change during a neutralization reaction using a calorimeter.",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  3,
+        "title":  "Activity Series of Metals",
+        "description":  "We ranked six metals (Mg, Fe, Cu, Ca, Pb and Zn) by how readily they react. Each cleaned metal was placed in solutions of the other metals\u0027 salts on a 24-well spot plate; the wells where one metal pushed another out of solution showed which metals are more active.",
+        "symbol":  "Ac",
+        "date":  "2026-08-12",
+        "group":  "redox",
+        "authors":  "",
+        "equation":  "Mg + Cu(NO3)2 -\u003e Mg(NO3)2 + Cu",
+        "videos":  [
+                       "https://drive.google.com/file/d/1yZUR8FgGe8ojiJmXd3793vsx_UFa5z_z/view",
+                       "https://drive.google.com/file/d/14NQxcti5lsb92A_azV7NDy4E1Wbj2vbY/view",
+                       "https://drive.google.com/file/d/15f5hh8mkBPdSN2ppj867MPm1-TNdngqa/view",
+                       "https://drive.google.com/file/d/1zLMcTS3fV1AxTU3THtcN_bXPKHQawQe8/view",
+                       "https://drive.google.com/file/d/1143PmaD8tQeNxcDNq75yXEieV_c-MisK/view",
+                       "https://drive.google.com/file/d/1i1zvJKHBTCq_iTKkQ45J8fsMUMJJHQof/view"
+                   ],
+        "report":  "https://drive.google.com/file/d/17RcjVemCTr9W_WQrvNy3M1ZJgGIliR8D/view",
+        "reportName":  "Activity Series of Metals report (Experiments 3 and 4)",
+        "photos":  [
+
+                   ],
+        "objective":  "To construct an activity series from some metallic elements.",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  4,
+        "title":  "Activity Series of Metals, Part 2",
+        "description":  "The second half of the activity series session, filmed later the same afternoon. It continues the metal displacement tests on the spot plate; the report shared with Lab 3 covers both parts.",
+        "symbol":  "Mt",
+        "date":  "2026-08-12",
+        "group":  "redox",
+        "authors":  "",
+        "equation":  "",
+        "videos":  [
+                       "https://drive.google.com/file/d/1SDYys35b-pXUV7V6wdBucBBFxa-fzGAb/view",
+                       "https://drive.google.com/file/d/17jA40DWdorzMzpskclbPq0eGrWxtey1B/view",
+                       "https://drive.google.com/file/d/1H9tU8d7Y9HW80c3qfnfM-wEpf2UdM9Mw/view",
+                       "https://drive.google.com/file/d/1tpSLoAr72rGWebzUksmSx4WZ52MCUgHl/view",
+                       "https://drive.google.com/file/d/1XkHkKMaYjsDpTuKIcEeObCltDfKkwdsm/view",
+                       "https://drive.google.com/file/d/1LuHqs2VTl19ubSdGT2qHj8CR33El3B2c/view"
+                   ],
+        "report":  "https://drive.google.com/file/d/17RcjVemCTr9W_WQrvNy3M1ZJgGIliR8D/view",
+        "reportName":  "Activity Series of Metals report (Experiments 3 and 4)",
+        "photos":  [
+
+                   ],
+        "objective":  "To construct an activity series from some metallic elements.",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  5,
+        "title":  "",
+        "description":  "",
+        "symbol":  "",
+        "date":  "",
+        "group":  "other",
+        "authors":  "",
+        "equation":  "",
+        "videos":  [
+
+                   ],
+        "report":  "",
+        "reportName":  "",
+        "photos":  [
+
+                   ],
+        "objective":  "",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  6,
+        "title":  "Water: Its Properties and Purification",
+        "description":  "We built a water filter from an upturned 2 L bottle packed with three layers of filter material, such as gravel, sand or activated carbon. Clean water and household gray water were checked for odour, pH and conductivity before and after filtering, then passed through a second time to compare.",
+        "symbol":  "Wa",
+        "date":  "2026-09-30",
+        "group":  "other",
+        "authors":  "",
+        "equation":  "",
+        "videos":  [
+                       "https://drive.google.com/file/d/1Vz1nzIERWtBULaI7HwRiNGcDNDmUEfJW/view",
+                       "https://drive.google.com/file/d/1j5Gla62ZfjBaa_s6HzSmX-wq0AZb5Ttx/view",
+                       "https://drive.google.com/file/d/1YB7jUU36DHIJ3plNoLQH9zGpoe74L7gd/view",
+                       "https://drive.google.com/file/d/142phVFPqM60IBfyvoq29z3PYWJx7GiTs/view",
+                       "https://drive.google.com/file/d/1BZg1aNghDjGq3AryTYQzjPIvOthHuv_A/view",
+                       "https://drive.google.com/file/d/1M_ixcGRH_1wOCQfUf-C4C_AuonS6RRD6/view",
+                       "https://drive.google.com/file/d/1olge8RpzLbZpchfT2urHumRaYRzv9bj2/view"
+                   ],
+        "report":  "https://drive.google.com/file/d/1dGdCLXvq-Z9lexd-nsKToZP9ARgg-_c3/view",
+        "reportName":  "Water: Its Properties and Purification report",
+        "photos":  [
+
+                   ],
+        "objective":  "To purify water by designing a filtering system.",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  7,
+        "title":  "Determination of Dissolved Oxygen",
+        "description":  "We determined how much oxygen is dissolved in water samples, across two lab sessions on 14 and 21 October. The written report for this experiment hasn\u0027t been added yet.",
+        "symbol":  "DO",
+        "date":  "2026-10-14",
+        "group":  "redox",
+        "authors":  "",
+        "equation":  "",
+        "videos":  [
+                       "https://drive.google.com/file/d/1B8EulWSLmKtQbqkkydiPCNg02-nn7aBU/view",
+                       "https://drive.google.com/file/d/1iQOvMLwgq3U43lFGqcOKTd-86ns52Vzd/view",
+                       "https://drive.google.com/file/d/1jL5EENvviLebDBt0ZTsLs2owOg0EO8iu/view",
+                       "https://drive.google.com/file/d/10YuDYzGkjEUbi08VY9vmi-1wMTX47x2n/view",
+                       "https://drive.google.com/file/d/1qfCP3rc9dHy2PTI0YC632ooutR5U63Wl/view",
+                       "https://drive.google.com/file/d/1_2ltEeWHW4cus6pBzT4YHctUC7cqDzfW/view"
+                   ],
+        "report":  "",
+        "reportName":  "",
+        "photos":  [
+
+                   ],
+        "objective":  "",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    },
+    {
+        "num":  8,
+        "title":  "Determination of Hardness and Chloride in Water",
+        "description":  "We measured the total, permanent and temporary hardness of a water sample by titrating it with EDTA using calmagite indicator, then found its chloride content by titrating with silver nitrate using potassium chromate as the indicator.",
+        "symbol":  "Hd",
+        "date":  "2026-10-28",
+        "group":  "stoich",
+        "authors":  "",
+        "equation":  "Ag+ + Cl- -\u003e AgCl",
+        "videos":  [
+                       "https://drive.google.com/file/d/1HwCJT4IERhO-M4xhCDumDXuyFLUeWH1y/view",
+                       "https://drive.google.com/file/d/1U2Cw5s0t69Mt3DJSc3cIZHMBFd1Jgxeb/view",
+                       "https://drive.google.com/file/d/1U7t52qqSjNQQFYWxjb4UROEUHmrsnnRY/view",
+                       "https://drive.google.com/file/d/1zjISgH57ZguDnMiALeoGBXwhLC4UyuT7/view",
+                       "https://drive.google.com/file/d/1_bAAtrtvb7SmN5_GjUDx5MdupRxza8FJ/view"
+                   ],
+        "report":  "https://drive.google.com/file/d/16gYgz-O46-S5AgvyMZOHPJDfVbr8Ii31/view",
+        "reportName":  "Hardness and Chloride in Water report",
+        "photos":  [
+
+                   ],
+        "objective":  "To determine the total, permanent and temporary hardness of a water sample using the EDTA titration method, and to determine its chloride content.",
+        "materials":  "",
+        "procedure":  "",
+        "observations":  "",
+        "results":  "",
+        "conclusion":  "",
+        "safety":  ""
+    }
 ]
